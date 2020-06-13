@@ -137,6 +137,8 @@ zoo_pets_mass = {
     'horse': 400,
 }
 total_mass = 0
+
+
 # for animal in zoo_pets_mass:
 #     print(animal, zoo_pets_mass[animal])
 #     total_mass += zoo_pets_mass[animal]
@@ -149,3 +151,39 @@ total_mass = 0
 #     print(mass)
 #     total_mass += mass
 # print('Общая масса', total_mass)
+# def same_func():
+#     print('Привет! Я функция')
+#
+# same_func()
+# my_list = [3, 14, 15, 92, 6]
+# for element in my_list:
+#     same_func()
+
+# def function_with_params(param):
+#     print('Функцию вызвали с параметром', param)
+#
+#
+# my_list = [3, 14, 15, 92, 6]
+# for element in my_list:
+#     print('Начало цикла')
+#     function_with_params(param=element)
+#     print('Конец цикла')
+
+# def power(number, pow):
+#     print('Функцию вызвали с параметрами', number, 'в степени', pow)
+#     power_value = number ** pow
+#     return power_value
+#
+#
+# my_list = [3, 14, 15, 92, 6]
+# for element in my_list:
+#     result = power(element, 10)
+#     print(result)
+
+def my_function():
+    """Не делает ничего, но документируем,
+    Нет, правда, Эта функция ничего не делает.
+    """
+    pass
+
+print(my_function.__doc__)
