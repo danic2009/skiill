@@ -77,16 +77,37 @@
 #         break
 # print('Good bay')
 
-print("Hello")
-f1, f2, count = 0, 1, 0
-while f2 < 1000000:
-    count +=1
-    if count > 27:
-        print("Итерация больше 27 - прерываюсь")
-        break
-    f1, f2 = f2, f1 + f2
-    if f2 < 1000:
-        continue
-    print(f2)
-else:
-    print("Было", count, "итераций")
+# print("Hello")
+# f1, f2, count = 0, 1, 0
+# while f2 < 1000000:
+#     count +=1
+#     if count > 27:
+#         print("Итерация больше 27 - прерываюсь")
+#         break
+#     f1, f2 = f2, f1 + f2
+#     if f2 < 1000:
+#         continue
+#     print(f2)
+# else:
+#     print("Было", count, "итераций")
+
+# Цикл for
+# элементы списка
+
+# a, b = 1, 2
+# (a, b) = (1, 2)
+# for element in [(1, 2), (3, 4)]:
+#     a, b = element[0], element[1]
+#     print(a + b)
+#
+# for (a, b) in [(1, 2), (3, 4)]:
+#     print(a + b)
+
+# pair_list = [(1, 2), (3, 4), (5, 6)]
+# for a, b in pair_list:
+#     print(a + b)
+# tripl_list = [(1, 2, 3), (4, 5, 6)]
+# for a, b, c in tripl_list:
+#     print(a, b, c)
+
+# Полезные функции в цикле
