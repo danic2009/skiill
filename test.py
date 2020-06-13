@@ -111,3 +111,41 @@
 #     print(a, b, c)
 
 # Полезные функции в цикле
+
+# zoo_pets = [
+#     'lion', 'skunk',
+#     'elephant', 'horse',
+# ]
+# for i, animal in enumerate(zoo_pets):
+#     print(i, animal)
+
+# for i in range(100, 600, 50):
+#     print(i)
+# zoo_pets = [
+#     'lion', 'skunk',
+#     'elephant', 'horse',
+# ]
+# for animal in zoo_pets:
+#     for char in animal:
+#         print(char)
+#     print(animal)
+
+zoo_pets_mass = {
+    'lion': 300,
+    'skunk': 5,
+    'elephant': 5000,
+    'horse': 400,
+}
+total_mass = 0
+# for animal in zoo_pets_mass:
+#     print(animal, zoo_pets_mass[animal])
+#     total_mass += zoo_pets_mass[animal]
+# print('Общая масса животных', total_mass)
+# for animal, mass in zoo_pets_mass.items():
+#     print(animal, mass)
+#     total_mass += mass
+# print('Общий вес животных', total_mass)
+# for mass in zoo_pets_mass.values():
+#     print(mass)
+#     total_mass += mass
+# print('Общая масса', total_mass)
