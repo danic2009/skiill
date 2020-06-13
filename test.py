@@ -1,3 +1,6 @@
+import pprint
+
+
 # x = -1
 # print("Hello")
 #
@@ -130,13 +133,13 @@
 #         print(char)
 #     print(animal)
 
-zoo_pets_mass = {
-    'lion': 300,
-    'skunk': 5,
-    'elephant': 5000,
-    'horse': 400,
-}
-total_mass = 0
+# zoo_pets_mass = {
+#     'lion': 300,
+#     'skunk': 5,
+#     'elephant': 5000,
+#     'horse': 400,
+# }
+# total_mass = 0
 
 
 # for animal in zoo_pets_mass:
@@ -180,10 +183,44 @@ total_mass = 0
 #     result = power(element, 10)
 #     print(result)
 
-def my_function():
-    """Не делает ничего, но документируем,
-    Нет, правда, Эта функция ничего не делает.
-    """
-    pass
+# def my_function():
+#     """Не делает ничего, но документируем,
+#     Нет, правда, Эта функция ничего не делает.
+#     """
+#     pass
+#
+# print(my_function.__doc__)
 
-print(my_function.__doc__)
+# динамическая типизация
+# def multiplay(nub_1, nub_2):
+#     print('Функцию вызвали с параметрами', nub_1, nub_2)
+#     value = nub_1 * nub_2
+#     return value
+# def multiplay(nub_1, nub_2):
+#     print('Функцию вызвали с параметрами', nub_1, nub_2)
+#     if isinstance(nub_1, int) and isinstance(nub_2, int):
+#         value = nub_1 * nub_2
+#         return value
+#     return 'error'
+#
+# print(multiplay(42, 27))
+# print(multiplay(5, 'Привет'))
+# print(multiplay(5, 7))
+
+# параметры передаются как ссылка
+def elephant_to_free(some_list):
+    elephand_found = 'elephand' in some_list
+    if elephand_found:
+        some_list.remove('elephand')
+        print('Слон на свобооде')
+    else:
+        print('Все слоны отпушенны на свободу')
+    return elephand_found
+
+
+zoo = ['lion', 'elephand', 'monkey', 'skunk', 'horse', 'elephand']
+
+elephant_to_free(zoo)
+elephant_to_free(zoo)
+elephant_to_free(zoo)
+print('Осталось выпустить только:', zoo)
