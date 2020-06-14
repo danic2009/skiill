@@ -34,11 +34,15 @@ sd.resolution = (1200, 600)
 #     sd.circle(center_position=point, radius=50)  # Вызвал шар
 # Нарисовать три ряда по 10 пузырьков
 
-for y in range(100, 301, 100):  # Взял ранже с шагом шара по высоте у
-    for x in range(100, 1001, 100):  # Взял ранже с шагом шара
-        point = sd.get_point(x, y)  # Создал шар
-        sd.circle(center_position=point, radius=50)  # Вызвал шар
+# for y in range(100, 301, 100):  # Взял ранже с шагом шара по высоте у
+#     for x in range(100, 1001, 100):  # Взял ранже с шагом шара
+#         point = sd.get_point(x, y)  # Создал шар
+#         sd.circle(center_position=point, radius=50)  # Вызвал шар
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
 # TODO здесь ваш код
-
+radius = 50
+for _ in range(100):
+    point = sd.random_point()
+    color = sd.random_color()
+    sd.circle(center_position=point, radius=50, color=color)
 sd.pause()
