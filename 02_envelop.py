@@ -22,7 +22,7 @@ envelop_x, envelop_y = 10, 7
 
 
 print(f'поместится ли бумага{paper_x, paper_y} в конверт {envelop_x, envelop_y} ?')
-if envelop_x > paper_x and envelop_y > paper_y:
+if envelop_x >= paper_x and envelop_y >= paper_y:
     print('YES')
 else:
     print('Нет, не поместится')

@@ -10,4 +10,9 @@
 
 a, b = 179, 37
 
-# TODO здесь ваш код
+
+probeg = 0
+while a > b:
+    probeg += 1
+    a -= b
+print(probeg)
