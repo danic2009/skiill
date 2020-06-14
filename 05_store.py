@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Есть словарь кодов товаров
+from pprint import pprint
 
 goods = {
     'Лампа': '12345',
@@ -47,9 +48,16 @@ store = {
 #     вывод на консоль количества и стоимости товара на складе
 
 # TODO здесь ваш код
-
-
-
-
-
+total = []
+for items in goods:
+    name = items
+    id = goods[items]
+    kolli4estvo = 0
+    cena = 0
+    for i in store[id]:
+        kolli4estvo = i['quantity']
+        cena = i['price'] * kolli4estvo
+        total.append(i['price'] * kolli4estvo)
+        print(f'количество {name, kolli4estvo}')
+        print(f'цена {cena}')
 
