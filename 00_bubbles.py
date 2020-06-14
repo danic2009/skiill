@@ -39,7 +39,6 @@ sd.resolution = (1200, 600)
 #         point = sd.get_point(x, y)  # Создал шар
 #         sd.circle(center_position=point, radius=50)  # Вызвал шар
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
-# TODO здесь ваш код
 radius = 50
 for _ in range(100):
     point = sd.random_point()
