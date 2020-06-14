@@ -18,21 +18,21 @@ sd.resolution = (1200, 600)
 #     sd.circle(center_position=point, radius=radius)
 # Написать функцию рисования пузырька, принммающую 2 (или более) параметра: точка рисовании и шаг
 
-
-
-def bobble(point, step):
-    radius = 50
-    for _ in range(3):
-        radius += step
-        sd.circle(center_position=point, radius=radius, width=2)
-
-
-point = sd.get_point(100, 100)
-bobble(point, 5)
+# def bobble(point, step):
+#     radius = 50
+#     for _ in range(3):
+#         radius += step
+#         sd.circle(center_position=point, radius=radius, width=2)
+#
+#
+# point = sd.get_point(100, 100)
+# bobble(point, 5)
 
 # Нарисовать 10 пузырьков в ряд
-# TODO здесь ваш код
 
+for x in range(100, 1001, 100):#Взял ранже с шагом шара
+    point = sd.get_point(x, 100)#Создал шар
+    sd.circle(center_position=point, radius=50)#Вызвал шар
 # Нарисовать три ряда по 10 пузырьков
 # TODO здесь ваш код
 
