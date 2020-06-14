@@ -1,6 +1,5 @@
 import pprint
 
-
 # x = -1
 # print("Hello")
 #
@@ -225,3 +224,11 @@ import pprint
 # elephant_to_free(zoo)
 # print('Осталось выпустить только:', zoo)
 
+a = 4#бумага
+b = 5#бумага
+c = 4#конверт
+d = 6#конверт
+if a < c and b < d:
+    print('ok')
+else:
+    print('no')
