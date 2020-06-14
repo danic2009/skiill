@@ -12,3 +12,11 @@
 educational_grant, expenses = 10000, 12000
 
 # TODO здесь ваш код
+months = 10
+money = 0
+i = 0
+while i <= months:
+    money +=expenses - educational_grant
+    expenses *= 1.03
+    i += 1
+print(f'Студенту надо попросить {money} рублей')
