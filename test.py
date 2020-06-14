@@ -208,19 +208,20 @@ import pprint
 # print(multiplay(5, 7))
 
 # параметры передаются как ссылка
-def elephant_to_free(some_list):
-    elephand_found = 'elephand' in some_list
-    if elephand_found:
-        some_list.remove('elephand')
-        print('Слон на свобооде')
-    else:
-        print('Все слоны отпушенны на свободу')
-    return elephand_found
+# def elephant_to_free(some_list):
+#     elephand_found = 'elephand' in some_list
+#     if elephand_found:
+#         some_list.remove('elephand')
+#         print('Слон на свобооде')
+#     else:
+#         print('Все слоны отпушенны на свободу')
+#     return elephand_found
+#
+#
+# zoo = ['lion', 'elephand', 'monkey', 'skunk', 'horse', 'elephand']
+#
+# elephant_to_free(zoo)
+# elephant_to_free(zoo)
+# elephant_to_free(zoo)
+# print('Осталось выпустить только:', zoo)
 
-
-zoo = ['lion', 'elephand', 'monkey', 'skunk', 'horse', 'elephand']
-
-elephant_to_free(zoo)
-elephant_to_free(zoo)
-elephant_to_free(zoo)
-print('Осталось выпустить только:', zoo)
